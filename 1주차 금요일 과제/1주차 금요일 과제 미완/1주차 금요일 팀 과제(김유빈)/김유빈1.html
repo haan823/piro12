@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        @media screen and (min-width:1200px) {
+            #content_p3{width: 1200px;}
+            .sub_p3{width: 500px;}
+            .wrap_p3 .block1, .block2,.block3,.block4,.block5, .block6{
+                width:300px;
+                margin: 30px;
+                padding: 20px;
+            }
+        }
+        @media screen and (min-width:992px) and (max-width:1199px) {
+            #content_p3{width: 1000px;}
+            .sub_p3{width: 400px;}
+            .wrap_p3 .block1, .block2,.block3,.block4,.block5, .block6{
+                width:200px;
+                margin: 30px;
+                padding: 30px;
+            }
+        }
+        @media screen and (max-width:991px) and (min-width:768px){
+            #content_p3{width: 800px; border:1px solid black;}
+            .sub_p3{width: 400px;}
+            .wrap_p3 .block1, .block2,.block3,.block4,.block5, .block6{
+                width:250px;
+                margin: 40px;
+                padding: 30px;
+            }
+        }
+        @media screen and (max-width:768px) {
+            #content_p3{width: 70%;border:1px solid black;}
+            .sub_p3{width: 80%;}
+            .wrap_p3 .block1, .block2,.block3,.block4,.block5, .block6{
+                width:70%;
+                padding: 20px;
+                margin: 20px auto;
+                float: none;
+            }
+        }
+
+        *{
+            margin:0; padding:0;
+            background-color: #f5f8fd;
+        }
+        a{
+            text-decoration: none;
+        }
+        #container_p3 { width:100%; }
+        #content_p3{
+            margin: 0 auto;
+            min-width: 650px;
+            text-align: center;
+            padding-bottom: 100px;
+        }
+        .head_p3{
+            height: 100px;
+            color: #444;
+            text-align: center;
+            line-height: 100px;
+            font-weight: 400;
+            font-size: 1.5em;
+        }
+        .sub_p3{
+            margin: 0 auto;
+            padding-bottom: 50px;
+            color:#6c757d;
+        }
+        .wrap_block1, .wrap_block2{
+            overflow: hidden;
+        }
+        @keyframes section1-ani {
+            from{
+                margin-top: 100%;
+            }
+            to{
+                visibility: visible;
+                margin-top: 0%;
+            }
+        }
+        .wrap_p3 .block1{
+            animation-name: section1-ani;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        .wrap_p3 .block2{
+            animation-name: section1-ani;
+            animation-delay: .2s;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        .wrap_p3 .block3{
+            animation-name: section1-ani;
+            animation-delay: .3s;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        .wrap_p3 .block4{
+            animation-name: section1-ani;
+            animation-delay: .4s;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        .wrap_p3 .block5{
+            animation-name: section1-ani;
+            animation-delay: .5s;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        .wrap_p3 .block6{
+            animation-name: section1-ani;
+            animation-delay: .6s;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+         .wrap_p3 .block1, .block2,.block3,.block4,.block5, .block6{
+             visibility: hidden;
+             border-radius: 10px;
+            float: left;
+            text-align: center;
+            background-color: white;
+         }
+
+        .wrap_p3 .block1:hover, .block2:hover,.block3:hover,.block4:hover,.block5:hover, .block6:hover{
+            transform: scale(1.2);
+            transition-duration: .8s;
+        }
+        .wrap_p3 .block1:hover a, .block2:hover a,.block3:hover a,.block4:hover a,.block5:hover a, .block6:hover a{
+            color: #62c6e8;
+        }
+        .wrap_p3 .block1 .image, .block2 .image,.block3 .image,.block4 .image,.block5 .image, .block6 .image{
+            padding: 10px 0;
+            background-color: transparent;
+        }
+        .wrap_p3 .block1 .block_head, .block2 .block_head,.block3 .block_head,.block4 .block_head,.block5 .block_head, .block6 .block_head{
+            background-color: transparent;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding-bottom: 10px;
+        }
+        .wrap_p3 a{
+            color: black;
+            background-color: transparent;
+        }
+        .wrap_p3 .block1 .block_sub, .block2 .block_sub,.block3 .block_sub,.block4 .block_sub,.block5 .block_sub, .block6 .block_sub{
+            background-color: transparent;
+            padding: 10px 5px;
+            text-align: left;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="container_p3">
+    <div id="content_p3">
+        <div class="head_p3">
+            <h1>Services</h1>
+        </div>
+        <div class="sub_p3">
+            <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+        </div>
+        <div class="wrap_p3">
+            <div class="wrap_block1">
+            <div class="block1">
+                <div class="image"><img src="img/logo1.png"/></div>
+                <div class="block_head"><a href="#none">Lorem Ipsum</a></div>
+                <div class="block_sub">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</div>
+            </div>
+            <div class="block2">
+                <div class="image"><img src="img/logo2.png"/></div>
+                <div class="block_head"><a href="#none">Dolor Sitema</a></div>
+                <div class="block_sub">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</div>
+            </div>
+            <div class="block3">
+                <div class="image"><img src="img/logo3.png"/></div>
+                <div class="block_head"><a href="#none">Sed ut perspiciatis</a></div>
+                <div class="block_sub">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</div>
+            </div>
+            </div>
+            <div class="wrap_block2">
+            <div class="block4">
+                <div class="image"><img src="img/logo4.png"/></div>
+                <div class="block_head"><a href="#none">Magni Dolores</a></div>
+                <div class="block_sub">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+            </div>
+            <div class="block5">
+                <div class="image"><img src="img/logo5.png"/></div>
+                <div class="block_head"><a href="#none">Nemo Enim</a></div>
+                <div class="block_sub">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</div>
+            </div>
+            <div class="block6">
+                <div class="image"><img src="img/logo6.png"/></div>
+                <div class="block_head"><a href="#none">Eiusmod Tempor</a></div>
+                <div class="block_sub">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
